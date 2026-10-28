@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Keys&amp;Firmware">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Keys&amp;Firmware/ProdKeys.-v22.5.0.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Keys&amp;Firmware/Firmware.23.0.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
