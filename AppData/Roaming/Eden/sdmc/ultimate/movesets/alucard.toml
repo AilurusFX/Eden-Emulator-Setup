@@ -1,0 +1,5 @@
+mist = false
+#Set Mist to either true or false (lowercase) to use the Form of Mist for Side Special
+#Mist Form is much more stable than Dark Dive (Command Grab)
+#Make sure when playing online that all players are using the same alucard.toml configuration
+skip_validation = false

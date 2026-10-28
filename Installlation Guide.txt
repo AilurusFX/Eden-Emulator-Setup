@@ -1,0 +1,54 @@
+===============================================================================
+                       EDEN EMULATOR - INSTALLATION GUIDE
+===============================================================================
+
+Please follow these instructions carefully step-by-step to ensure the emulator
+and game files are set up correctly.
+
+-------------------------------------------------------------------------------
+[STEP 1] SOFTWARE PREREQUISITES
+-------------------------------------------------------------------------------
+* Ensure you have WinRAR installed on your system to extract the compressed 
+  packages. 
+* If you do not have it, install WinRAR before proceeding to the next steps.
+
+-------------------------------------------------------------------------------
+[STEP 2] EMULATOR DATA SETUP
+-------------------------------------------------------------------------------
+1. Locate the "Eden" folder included in Appdata/Roaming/Eden.
+2. Press the [Windows Key + R] on your keyboard to open the Run dialog box.
+3. Type "%appdata%" (without quotes) and press Enter. This will open your 
+   system's "Roaming" folder.
+4. Copy or move the "Eden" folder directly into this "Roaming" directory.
+
+-------------------------------------------------------------------------------
+[STEP 3] EXTRACTING THE GAME FILES
+-------------------------------------------------------------------------------
+1. I Couldn't add the game files so the best I can do is give links to each
+   download in the Game Parts folder.
+2. Ensure that all 3 compressed part files are located together in this folder 
+   and that no other unrelated files are inside.
+3. Right-click on Part 1 and select "Extract Here" using WinRAR. 
+   (WinRAR will automatically chain and extract the remaining parts into a single 
+   complete game file).
+
+-------------------------------------------------------------------------------
+[STEP 4] UPDATES AND DLC DEPLOYMENT
+-------------------------------------------------------------------------------
+1. Navigate to the "Update&DLC" folder.
+2. Update file was too large so use the link to download it
+3. Extract the update and DLC files using WinRAR.
+4. Move or copy these extracted files directly into the folder where you just 
+   extracted your main game files. This ensures the emulator can properly locate 
+   the content.
+
+-------------------------------------------------------------------------------
+[STEP 5] FIRST LAUNCH & TROUBLESHOOTING
+-------------------------------------------------------------------------------
+* Launch the Eden Emulator executable.
+* If everything was done correctly, your game should be fully functional.
+
+NOTE: If the emulator requests keys on launch, a backup folder containing 
+      the necessary "prod.keys" and firmware has been provided in this package 
+      for you to use.
+===============================================================================

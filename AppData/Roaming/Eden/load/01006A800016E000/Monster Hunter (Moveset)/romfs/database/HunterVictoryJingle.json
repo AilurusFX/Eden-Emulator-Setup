@@ -1,0 +1,75 @@
+{
+    "bgm_database_entries": [
+        {
+            "ui_bgm_id": "ui_bgm_mh03_mhwi_houkou",
+            "clone_from_ui_bgm_id": "ui_bgm_mh02_mh4_eiyuunoakashi",
+            "stream_set_id": "set_mh03_mhwi_houkou",
+            "name_id": "mh03_mhwi_houkou",
+            "is_selectable_stage_make": false,
+            "is_selectable_movie_edit": false
+        },
+        {
+            "ui_bgm_id": "ui_bgm_z34_f_hunter",
+            "clone_from_ui_bgm_id": "ui_bgm_z34_f_ike",
+            "stream_set_id": "set_z34_f_hunter"
+        }
+    ],
+    "stream_set_entries": [
+        {
+            "stream_set_id": "set_mh03_mhwi_houkou",
+            "info0": "info_mh03_mhwi_houkou"
+        },
+        {
+            "stream_set_id": "set_z34_f_hunter",
+            "info0": "info_z34_f_hunter"
+        }
+    ],
+    "assigned_info_entries": [
+        {
+            "info_id": "info_mh03_mhwi_houkou",
+            "stream_id": "stream_mh03_mhwi_houkou",
+            "condition": "sound_condition_none",
+            "condition_process": "sound_condition_process_add",
+            "change_fadeout_frame": 60,
+            "menu_change_fadeout_frame": 60
+        },
+        {
+            "info_id": "info_z34_f_hunter",
+            "stream_id": "stream_z34_f_hunter",
+            "condition": "sound_condition_none",
+            "condition_process": "sound_condition_process_add",
+            "change_fadeout_frame": 60,
+            "menu_change_fadeout_frame": 60
+        }
+    ],
+    "stream_property_entries": [
+        {
+            "stream_id": "stream_mh03_mhwi_houkou",
+            "data_name0": "mh03_mhwi_houkou"
+        },
+        {
+            "stream_id": "stream_z34_f_hunter",
+            "data_name0": "z34_f_hunter"
+        }
+    ],
+    "bgm_property_entries": [
+        {
+            "stream_name": "mh03_mhwi_houkou",
+            "loop_start_ms": 29869,
+            "loop_start_sample": 1317207,
+            "loop_end_ms": 154467,
+            "loop_end_sample": 6811995,
+            "duration_ms": 154467,
+            "duration_sample": 6811995
+        },
+        {
+            "stream_name": "z34_f_hunter",
+            "loop_start_ms": 0,
+            "loop_start_sample": 0,
+            "loop_end_ms": 0,
+            "loop_end_sample": 0,
+            "duration_ms": 7488,
+            "duration_sample": 359424
+        }
+    ]
+}

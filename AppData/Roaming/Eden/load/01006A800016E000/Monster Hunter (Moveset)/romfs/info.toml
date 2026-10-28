@@ -1,0 +1,9 @@
+display_name="Monster Hunter (Moveset)"
+authors = "Hinata, Moy, SpiritNyx"
+version="1.0.0"
+category="Fighter"
+description="""
+Monster Hunter joins the battle!
+This is a complete moveset including Classic Mode route and fighter tips entries.
+Please see README.txt for required dependencies.
+"""

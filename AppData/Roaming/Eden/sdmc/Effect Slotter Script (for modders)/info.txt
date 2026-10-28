@@ -1,0 +1,101 @@
+|------| Important Note |------|
+The Python scripts included in this release require Python 3.9 or higher. Thanks!
+You can also delete any .DS_STORE files or anything related to macOS/OSX, I've been using that more recently.
+
+|------| Usage (no script) |------|
+In Ultimate, fighter effects are stored in one central folder: 'effect/fighter/'. There is a
+subdirectory for each of the fighters in there, labeled with their fighter name (i.e. 
+'effect/fighter/mario').
+
+Inside each of those, you can find another file (the main effect file), as well as up to two
+more directories for more things related to effects. In the following list, I've used the full
+filepath for emphasis on the location and used 'cloud' (since he has all three effect children).
+You can swap out 'cloud' for your fighter as well:
+1. 'effect/fighter/cloud/ef_cloud.eff' - This is the main effect file, and contains information
+on the actual effects and how they are intended to perform/react to the in-game environment.
+2. 'effect/fighter/cloud/trail/' - This is the effect subdirectory for sword trails, which most
+swordfighters have. It contains a variety of '.nutexb' files for the sword trail textures.
+3. 'effect/fighter/cloud/model/' - This is the effect subdirectory for models, which might include
+things like Cloud's limit gauge (not the one on UI, that is not controlled by effects).
+
+To one-slot the main effect file, rename it to match the following format: 'ef_<fighter>_c<slot>.eff',
+where '<fighter>' is replaced by the fighter name and '<slot>' is replaced by the 0-indexed costume
+slot you want to put it on. For example, if I wanted to make a one-slot effect for Joker on the first
+costume, I would rename the file to 'ef_jack_c00.eff' ("jack" is the internal name for joker).
+
+To one-slot the trails, rename the 'trail' directory to match the following format: 'trail_c<slot>',
+where '<slot>' is replaced by the 0-indexed costume slot you want to put it on.
+
+To one-slot an effect model, you need to go into the model directory and rename the model you want to
+one-slot to '<model_name>_c<slot>', where '<model_name>' is replaced by the name of the model you
+are one-slotting and '<slot>' is the 0-indexed costume slot. For example, if I want to make Cloud's
+limit-gauge one-slot on slot 0, I would rename 'effect/fighter/cloud/model/m_cloudlimitgauge' to
+'effect/fighter/cloud/model/m_cloudlimitgauge_c00'.
+
+IMPORTANT NOTE ABOUT ADDING FILES: All of the files must be added to the proper fighter, and in order
+to do this your mod requires a 'config.json' file in the root (right next to the 'effect' folder). All
+files inside of the one-slotted trail folder and the one-slotted model folder (and of course the main
+effect file) need to be added to: 'fighter/<fighter_name>/c<slot>', where '<fighter_name>' is replaced
+by the name of the fighter and '<slot>' is replaced by the 0-indexed slot you are one-slotting.
+
+Also, when you are one-slotting trails and models, you need to make sure that *every file* is added again,
+so even if you are only changing one trail (or some model textures), you need to put the original
+vanilla files for the files you didn't touch in that directory due to some limitations of the effect
+loading subsystem.
+
+For example, the following is an example 'config.json' for one-slotting effects, the limit gauge, and
+sword trails:
+
+|------| Example 'config.json' |------|
+{
+	"new-dir-files": {
+		"fighter/cloud/c00": [
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/ef_cloud_limitgauge00.nutexb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/ef_cloud_limitwindow00.nutexb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.nuanmb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.nuhlpb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.numatb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.numdlb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.numshb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.numshexb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.nusktb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.nusrcmdlb",
+			"effect/fighter/cloud/model/m_cloudlimitgaugemax_c00/c00/model.xmb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/ef_cloud_limitgauge00.nutexb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/ef_cloud_limitwindow00.nutexb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.nuanmb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.nuhlpb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.numatb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.numdlb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.numshb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.numshexb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.nusktb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.nusrcmdlb",
+			"effect/fighter/cloud/model/m_cloudlimitgauge_c00/c00/model.xmb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword1.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword1_blue.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword1_purple.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword1_red.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword1_yellow.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword2.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword3.nutexb",
+			"effect/fighter/cloud/trail_c00/tex_cloud_sword4.nutexb",
+			"effect/fighter/cloud/ef_cloud_c00.eff"
+		]
+	}
+}
+
+|------| Usage (with script) |------|
+If you are one-slotting a previously non one-slotted effect, then you are going to want to use the script
+provided in this ZIP called 'eff_slotter.py'.
+
+Here is the usage: python3 eff_slotter.py path/to/mod/root <fighter_name> <slot>
+
+This will check that mod for any effect files that can be one-slotted to the specified slot. It only
+checks the 'effect/fighter' folder so if there are any other folders that will impact it, that's on you to
+make sure that they match up.
+
+Here is an example usage:
+python3 ./eff_slotter.py ./blue-cloud-effects cloud 3
+
+And it will rename all the required files and then generate a 'config.json'

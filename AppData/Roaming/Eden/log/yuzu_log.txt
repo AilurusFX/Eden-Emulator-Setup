@@ -1,0 +1,31 @@
+[   0.160724] Input <Info> input_common\drivers\udp_client.cpp:UDPClient:139: Udp Initialization started
+[   0.160734] Input <Info> input_common\drivers\udp_client.cpp:StartCommunication:331: Starting communication with UDP input server on 127.0.0.1:26760
+[   0.219041] Input <Info> input_common\drivers\joycon.cpp:Joycons:22: Joycon driver Initialization started
+[   0.282817] Frontend <Info> yuzu\main.cpp:GMainWindow:379: yuzu Version: yuzu 1655
+[   0.282833] Frontend <Info> yuzu\main.cpp:LogRuntimes:255: MSVC Compiler: 1937 Runtime: 14.44.35211.0
+[   0.282835] Frontend <Info> yuzu\main.cpp:LogRuntimes:264: Qt Compile: 5.15.2 Runtime: 5.15.2
+[   0.282836] Frontend <Info> yuzu\main.cpp:GMainWindow:395: Host CPU: Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz | AVX2 | FMA
+[   0.282839] Frontend <Info> yuzu\main.cpp:GMainWindow:397: Host CPU Cores: 8
+[   0.282840] Frontend <Info> yuzu\main.cpp:GMainWindow:400: Host CPU Threads: 16
+[   0.282906] Frontend <Info> yuzu\main.cpp:GMainWindow:401: Host OS: Windows 10 Version 22H2 (Build 19045.6332)
+[   0.282916] Frontend <Info> yuzu\main.cpp:GMainWindow:403: Host RAM: 31.92 GiB
+[   0.282917] Frontend <Info> yuzu\main.cpp:GMainWindow:404: Host Swap: 8.27 GiB
+[   0.282928] Frontend <Info> yuzu\main.cpp:GMainWindow:409: Host Timer Resolution: 0.4960 ms
+[   0.376238] Service.FS <Info> core\file_sys\system_archive\system_archive.cpp:SynthesizeSystemArchive:75: Synthesizing system archive 'SystemVersion' (0x0100000000000809).
+[   0.376244] Common.Filesystem <Warning> core\file_sys\system_archive\system_version.cpp:SystemVersion:17: called - Using hardcoded firmware version 'NintendoSDK Firmware for NX 12.1.0-1.0'
+[   0.376264] Service.FS <Info> core\file_sys\system_archive\system_archive.cpp:SynthesizeSystemArchive:90:     - System archive generation successful!
+[   0.376278] Frontend <Info> yuzu\main.cpp:SetFirmwareVersion:4862: Installed firmware: No firmware available
+[   0.419847] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Scarlet [0100A3D008C5C000][v0][US](nsw2u.com).xci has a different type (unknown) than its extension.
+[   0.421245] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Scarlet [0100A3D008C5C800][v65536][US](nsw2u.com).nsp has a different type (unknown) than its extension.
+[   0.422974] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Scarlet [New Uniform Set DLC][v0][US](nsw2u.com).nsp has a different type (unknown) than its extension.
+[   0.424428] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Violet [01008F6008C5E000][v0][US](nsw2u.com).xci has a different type (unknown) than its extension.
+[   0.425765] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokémon Scarlet [0100A3D008C5C800][v655360][US](nsw2u.com).nsp has a different type (unknown) than its extension.
+[   0.427435] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Sonic Frontiers [01004AD014BF0000][v0][US](nsw2u.com).xci has a different type (unknown) than its extension.
+[   0.440705] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Scarlet [0100A3D008C5C000][v0][US](nsw2u.com).xci has a different type (unknown) than its extension.
+[   0.442010] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Scarlet [0100A3D008C5C800][v65536][US](nsw2u.com).nsp has a different type (unknown) than its extension.
+[   0.443677] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Scarlet [New Uniform Set DLC][v0][US](nsw2u.com).nsp has a different type (unknown) than its extension.
+[   0.444955] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokemon Violet [01008F6008C5E000][v0][US](nsw2u.com).xci has a different type (unknown) than its extension.
+[   0.446225] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Pokémon Scarlet [0100A3D008C5C800][v655360][US](nsw2u.com).nsp has a different type (unknown) than its extension.
+[   0.447832] Loader <Warning> core\loader\loader.cpp:GetLoader:259: File Sonic Frontiers [01004AD014BF0000][v0][US](nsw2u.com).xci has a different type (unknown) than its extension.
+[  25.736223] Frontend <Info> yuzu\main.cpp:OnGameListOpenFolder:2333: Opening Save Data path for program_id=01001f5010dfa000
+[  25.736223] Frontend <Info> yuzu\main.cpp:OnGameListOpenFolder:2333: Opening Save Data path for program_id=01001f5010dfa000
